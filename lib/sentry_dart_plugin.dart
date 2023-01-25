@@ -113,6 +113,8 @@ class SentryDartPlugin {
       params.add(_configuration.commits);
     }
 
+    params.add('--ignore-missing');
+
     _executeAndLog('Failed to set commits', params);
   }
 
